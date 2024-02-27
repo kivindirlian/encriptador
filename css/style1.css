@@ -1,0 +1,27 @@
+:root {
+    --primario: #0A3871;
+    --secundario: #D8DFE8;
+    --terciarioBlanco: #FFFFFF;
+    --cuaternario: #F3F5FC;
+    --quintoColor:#495057;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cuaternario);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* contenido */
+
+

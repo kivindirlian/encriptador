@@ -81,9 +81,6 @@ input{
     
 }
 
-.contenedorCajaTexto {}
-
-
 .textoEncriptar{
     width: 540px;
     height: 300px;
@@ -124,7 +121,7 @@ input{
 
 .btnEncriptar,
 .btnDesencriptar,
-.btncopiar{
+.btncopiar, .btncopiartrue{
     width: 250px;
     height: 40px;
     font-size: 2rem;
@@ -132,11 +129,7 @@ input{
     margin: 0px 1rem
 }
 
-.btncopiar{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
+
 .btnEncriptar {
     border: none;
     background-color: var(--primario);
@@ -153,6 +146,8 @@ input{
 
 .btncopiar{
     display: none;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .btncopiartrue{
@@ -326,7 +321,7 @@ input{
     }
 
     .btncopiar{
-        display: flex;
+        display: none;
         justify-content: center;
         margin: 0 auto;
     }

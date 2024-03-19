@@ -1,3 +1,4 @@
+
 let btncopiar = document.querySelector(".btncopiar");
 let texto = document.querySelector('.texto');
 let btnencriptador = document.querySelector('.btnencriptador');
@@ -26,23 +27,24 @@ function encriptar() {
         let validar = new RegExp("[^a-z\#\&]+")
         if (esMinuscula(letraActual)) {
             if (textEncriptar != 0 || textEncriptar.value == validar) {
-               
-                    textEncriptado.innerHTML = (textEncriptar.replace(/e/, "enter")
-                        .replace(/i/gi, 'imes')
-                        .replace(/a/gi, 'ai')
-                        .replace(/u/gi, 'ufat')
-                        .replace(/o/gi, 'ober')
-                    );
+                let btncopiar = document.querySelector(".btncopiar");
+                textEncriptado.innerHTML = (textEncriptar.replace(/e/, "enter")
+                    .replace(/i/gi, 'imes')
+                    .replace(/a/gi, 'ai')
+                    .replace(/u/gi, 'ufat')
+                    .replace(/o/gi, 'ober')
+                );
 
 
 
-                    displayNone.style.display = 'none';
-                    document.getElementsByTagName("textarea")[0].value = "";
-                    texto1.classList.add("separacion");
-                    btncopiar.classList.add("btncopiartrue");
-                    document.querySelector(".imgError").style.display = 'none'
+                displayNone.style.display = 'none';
+                document.getElementsByTagName("textarea")[0].value = "";
+                texto1.classList.add("separacion");
+                btncopiar.classList.add("btncopiartrue");
+                btncopiar.classList.remove("btncopiar");
+                document.querySelector(".imgError").style.display = 'none';
 
-            }else {
+            } else {
 
 
                 textEncriptado.innerHTML = ("debes escribir un mensaje para poder encriptar");
@@ -57,13 +59,13 @@ function encriptar() {
             }
         } else {
             textEncriptado.innerHTML = ("debe ser minuscula y no tener caracteres especiales");
-                displayNone.style.display = 'none';
-                document.getElementsByTagName("textarea")[0].value = "";
-                texto1.classList.add("error");
-                texto1.classList.remove("separacion");
-                texto1.style.margin = '20px 0';
-                document.querySelector(".imgError").style.display = 'block'
-                btncopiar.style.display = 'none';
+            displayNone.style.display = 'none';
+            document.getElementsByTagName("textarea")[0].value = "";
+            texto1.classList.add("error");
+            texto1.classList.remove("separacion");
+            texto1.style.margin = '20px 0';
+            document.querySelector(".imgError").style.display = 'block'
+            btncopiar.style.display = 'none';
         }
     }
 

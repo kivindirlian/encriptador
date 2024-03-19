@@ -31,6 +31,21 @@ input{
     border: none;
 }
 
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: red;
+    background-color: #495057;
+}
+
+.imgError{
+    margin: 20px auto;
+    width: 10%;
+    display: none;
+}
+
 
 
 /* logo */
@@ -45,7 +60,7 @@ input{
 /* contenido proncipal */
 
 .contenidoPrincipal {
-    width: 89%;
+    width: 70%;
     margin: 1rem auto;
 
 }
@@ -83,6 +98,7 @@ input{
      resize: none;
     overflow: hidden; 
    color: var(--primario);
+   /* text-transform: lowercase; */
 }
 
 .textoEncriptar:focus{
@@ -190,6 +206,7 @@ input{
     flex-direction: column;
     justify-content: space-between;
     align-items:normal;
+    color: var(--quintoColor);
 }
 
 
@@ -281,7 +298,8 @@ input{
 
 @media (max-width:1400px) and (min-width:610px) { 
     .contenido4{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }   
 
     .contenidoPrincipalUno{
@@ -351,3 +369,5 @@ input{
 
 }
 }
+
+

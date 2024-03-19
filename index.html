@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style1.css">
 
-    <title>Encriptador v1</title>
+    <title>Encriptador v1.0</title>
 </head>
 
 <body>
@@ -34,9 +34,9 @@
                                         d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
                                 </svg> Solo letras minúsculas y sin acentos</p>
                         </div>
-                        <input type="button" value="Encriptar" class="btnEncriptar" id="btnDesencriptador"
+                        <input type="button" value="Encriptar" class="btnEncriptar" id="btnencriptador"
                             onclick="encriptar()">
-                        <input type="button" value="Desencriptar" class="btnDesencriptar" onclick="desencriptar()">
+                        <input type="button" value="Desencriptar" class="btnDesencriptar" id="btnDesencriptador" onclick="desencriptar()">
                     </form>
                 </div>
 
@@ -53,6 +53,8 @@
                 <img src="./galery/alerta.png" alt="imagen de una alerta" class="imgAlert">
                 <p class="textoEncriptado"></p>
                 <input type="button" value="copiar" class=" btncopiar" onclick="copiarTexto()">
+
+                <img src="./galery/alerta.png" alt="imagen de una alerta" class="imgError">
             </div>
         </div>
 

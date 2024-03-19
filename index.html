@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+
+    <title>Encriptador v1.0</title>
+</head>
+
+<body>
+
+    <header class="contenido4">
+
+
+        <div class="contenedorLogo">
+            <a href="#"><img src="./galery/Logo.png" alt="imagen del logo"></a>
+        </div>
+        <div class="contenidoPrincipal">
+            <div class="contenidoPrincipalUno">
+                <div class="contenedorCajaTexto">
+
+                    <form>
+                        <textarea name="textoEncriptar" class="textoEncriptar" id="textoEncriptador"
+                            placeholder="Ingrese el texto aqui"></textarea>
+
+                        <div class="texto">
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="10px" height="13px" fill="currentColor"
+                                    class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                </svg> Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <input type="button" value="Encriptar" class="btnEncriptar" id="btnencriptador"
+                            onclick="encriptar()">
+                        <input type="button" value="Desencriptar" class="btnDesencriptar" id="btnDesencriptador" onclick="desencriptar()">
+                    </form>
+                </div>
+
+                
+            </div>
+
+            <div class="resultadoEncriptamiento" id="encriptado">
+                <div class="contenido3">
+                    <img src="./galery/Muñeco.png" alt="imagen de una caricatura utilizando una lupa para ver la luna">
+
+                    <h3>Ninún mensaje fue encontrado</h3>
+                    <p>ingresar el texto que desees encriptar o desencriptar</p>
+                </div>
+                <img src="./galery/alerta.png" alt="imagen de una alerta" class="imgAlert">
+                <p class="textoEncriptado"></p>
+                <input type="button" value="copiar" class=" btncopiar" onclick="copiarTexto()">
+
+                <img src="./galery/alerta.png" alt="imagen de una alerta" class="imgError">
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
